@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/aboutme.css">
+    <script src="../js/jquery-1.11.3.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/carousel.js"></script>
+    <script src="../js/footer.js"></script>
+    <title>关于我们</title>
+</head>
+<body>
+<!--顶部-->
+<header id="header">
+</header>
+<!--顶部end-->
+<!--轮播-->
+<div id="carousel"></div>
+<!--轮播end-->
+
+<div id="content">
+    <p>Contact</p>
+    <p>联系我们</p>
+    <div class="left_con left">
+        <div class="map"></div>
+           
+        <div>
+            <ul>
+                <li>地址：北京市海淀区万寿路街道文博大厦二楼</li>
+                <li>手机号：15210528007</li>
+                <li>电子邮箱：469342722@qq.com</li>
+            </ul>
+        </div>
+    </div>
+    <div class="right_con right">
+        <form action="">
+            <input type="text" placeholder="请输入姓名">
+            <input type="text" placeholder="请输入邮箱">
+            <input type="text" placeholder="请输入留言标题">
+            <textarea name="" id="" cols="30" rows="10" placeholder="请输入留言内容"></textarea>
+            <br>
+            <input type="button" value="提交">
+        </form>
+    </div>
+</div>
+
+
+
+
+<!--底部-->
+<footer id="footer"></footer>
+<!--底部end-->
+
+
+<!--回到顶部-->
+<div id="returnTop"></div>
+
+
+<script>
+    //返回顶部图标显示隐藏
+    window.onscroll = function () {
+        var scrollTop = $(this).scrollTop();
+        if(scrollTop > 300)
+            $("#returnTop").show();
+        else
+            $("#returnTop").hide();
+    }
+
+</script>
+
+</body>
+</html>

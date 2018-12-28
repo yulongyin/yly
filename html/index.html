@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/jquery-1.11.3.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/carousel.js"></script>
+    <script src="../js/footer.js"></script>
+    <title>首页</title>
+</head>
+<body>
+    <div id="index">
+        <div id="header">
+
+        </div>
+        <!--<iframe src="header.html" id="header" frameborder="0"></iframe>-->
+        <!-- 轮播图 -->
+        <div id="carousel">
+            
+        </div>
+        <div class="clearfix"></div>
+        <!-- 轮播图结束 -->
+        <div class="clearfix"></div>
+        <div id="content">
+            <!--作品展示-->
+            <div class="con_more">
+                <ul>
+                    <li>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</li>
+                    <li>作品展示</li>
+                    <li>&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</li>
+                </ul>
+                <ul>
+                    <li><img src="../img/more.png" alt=""></li>
+                </ul>
+                <ul class="clearfix">
+
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <div class="show_pro">
+                <a href="#" name="f1"></a>
+                <h1>1F&nbsp;&nbsp;banner</h1>
+                <div class="show_pic">
+                    <ul>
+                        <li><img src="../images/banner01.png" alt=""></li>
+                        <li>banner01</li>
+                    </ul>
+                    <ul>
+                        <li><img src="../images/banner02.png" alt=""></li>
+                        <li>banner02</li>
+                    </ul>
+                    <ul>
+                        <li><img src="../images/banner03.png" alt=""></li>
+                        <li>banner03</li>
+                    </ul>
+                    <ul>
+                        <li><img src="../images/banner04.png" alt=""></li>
+                        <li>banner04</li>
+                    </ul>
+                    <ul>
+                        <li><img src="../images/banner05.png" alt=""></li>
+                        <li>banner05</li>
+                    </ul>
+                    <ul>
+                        <li><img src="../images/banner06.png" alt=""></li>
+                        <li>banner06</li>
+                    </ul>
+                    <ul>
+                        <li><img src="../images/banner07.png" alt=""></li>
+                        <li>banner07</li>
+                    </ul>
+                    <ul>
+                        <li><img src="../images/banner08.png" alt=""></li>
+                        <li>banner08</li>
+                    </ul>
+                    
+                </div>
+                <div class="show_more">
+                    <ul>
+                        <li>----------</li>
+                        <li><a href="product.html">查看更多</a></li>
+                        <li><img src="../img/next01.png" alt=""></li>
+                        <li>----------</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="show_pro">
+                <a href="#" name="f2"></a>
+                <h1>2F&nbsp;&nbsp;三折页</h1>
+                <div class="show_szy">
+                    <ul>
+                        <li><img src="../images/psg01.png" alt=""></li>
+                        <li>派特森</li>
+                    </ul>
+                    <ul>
+                        <li><img src="../images/psg02.png" alt=""></li>
+                        <li>派特森</li>
+                    </ul>
+                    <ul>
+                        <li><img src="../images/ttst01.png" alt=""></li>
+                        <li>天太世统</li>
+                    </ul>
+                    <ul>
+                        <li><img src="../images/ttst02.png" alt=""></li>
+                        <li>天太世统</li>
+                    </ul>
+                </div>
+                <div class="show_more">
+                    <ul>
+                        <li>----------</li>
+                        <li><a href="product.html">查看更多</a></li>
+                        <li><img src="../img/next01.png" alt=""></li>
+                        <li>----------</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="show_pro">
+                <a href="#" name="f3"></a>
+                <h1>3F&nbsp;&nbsp;网站建设</h1>
+                <div class="show_web">
+                    <ul>
+                        <li><img src="../images/webpage02-1.png" alt=""></li>
+                        <li><img src="../images/webpage02-2.png" alt=""></li>
+                        <li><img src="../images/webpage02-3.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="show_more">
+                    <ul>
+                        <li>----------</li>
+                        <li><a href="product.html">查看更多</a></li>
+                        <li><img src="../img/next01.png" alt=""></li>
+                        <li>----------</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+
+    </div>
+    <div id="footer"></div>
+
+
+    <!--点击到达指定楼层-->
+    <div id="floor">
+        <ul>
+            <li><a href="#f1">1F</a></li>
+            <li><a href="#f2">2F</a></li>
+            <li><a href="#f3">3F</a></li>
+        </ul>
+    </div>
+
+    <!--回到顶部-->
+    <div id="returnTop"></div>
+
+    <script>
+        $(function () {
+            //console.log($("nav ul li:even").html())
+            //console.log()
+            //$("nav ul li:even").css("background","../img/nav_img01.png");
+            $(".show_more ul").mouseover(function () {
+                $(".show_more ul img").attr("src","../img/next02.png")
+            }).mouseleave(function () {
+                $(".show_more ul img").attr("src","../img/next01.png")
+            });
+
+
+            //返回顶部
+            $("#returnTop").click(function () {
+                var speed = 500;
+                $("body,html").animate({scrollTop:0},speed);
+                return false;
+            });
+            //返回顶部图标显示隐藏
+            window.onscroll = function () {
+                var scrollTop = $(this).scrollTop();
+                if(scrollTop > 300)
+                    $("#returnTop").show();
+                else
+                    $("#returnTop").hide();
+            }
+        })
+        
+    </script>
+</body>
+</html>

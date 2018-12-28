@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../js/jquery-1.11.3.js"></script>
+    <title>练习</title>
+    <style>
+        *{margin:0;padding:0;}
+        li{list-style: none;}
+        #img1{width:100px;vertical-align: middle;}
+        #img2{width:100px;}
+
+        #img3{width:100px;}
+        #line span{line-height: 100px;}
+        /*#box{width:100%;}
+        #d1 img{
+            width:100%;
+            height:auto;
+        }
+        #d2{
+            width:100%;
+            height: 100px;
+            background:rgba(0,0,0,0.6);
+        }
+        #d3{
+            width: 100%;
+            height:1200px;
+            background:#f0f;
+        }
+        #d4{
+            width: 100%;
+            height:1200px;
+            background:#0ff;
+        }
+        .fixed{
+            position: fixed;
+            top: 0;
+        }
+        .ddd{width:200px;}
+        .aaa{height:100px;}
+         #box{width:300px;height: 400px;margin: 0 auto;position: relative;}
+        .box1{width:300px;height:400px;background:#f0f;position: absolute;}
+        .box2{width:300px;height:400px;background:#ff0;position: absolute;}
+        .box3{width:300px;height:400px;background:#0ff;position: absolute;}
+        #max{width:100%;background: #aaa;}
+        #max .max-width{width:88%;margin: 0 auto;}
+        #max .max-width>div{float: left;}
+        #max .max-width .left-width{width:70%;float: left;}
+        #max .max-width .left-width ul{float: left;width:calc(100% / 3);}
+        #max .max-width .left-width ul li{line-height: 30px;}
+        #max .max-width .left-width ul li p{margin-bottom: 40px;}
+        #max .max-width .left-width ul li span{margin-bottom: 30px;display: inline-block;}
+        #max .max-width .right-width{width:30%;float: left;}
+        #max .max-width .right-width ul li{line-height: 30px;}*/
+    </style>
+    <script src="../js/jquery-1.11.3.js"></script>
+</head>
+<body>
+    <div>
+        <img id="img1" src="../img/the_last01.png" alt="">文字
+    </div>
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <img id="img2" src="../img/the_last01.png" alt="">
+                </td>
+                <td>文字</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div id="line">
+        <img id="img3" src="../img/the_last01.png" alt=""><span>文字</span>
+    </div>
+    
+    <!--<div id="max">
+        <div class="max-width">
+            <div class="left-width">
+                <ul>
+                    <li><p>222222222</p></li>
+                    <li><span>222222222</span></li>
+                    <li>222222222</li>
+                    <li>222222222</li>
+                </ul>
+                <ul>
+                    <li><p>1</p></li>
+                    <li><span>222222222</span></li>
+                    <li>222222222</li>
+                    <li>222222222</li>
+                    <li>222222222</li>
+                </ul>
+                <ul>
+                    <li><p>1</p></li>
+                    <li><span>222222222</span></li>
+                    <li>222222222</li>
+                    <li>222222222</li>
+                    <li>222222222</li>
+                </ul>
+            </div>
+            <div class="right-width">
+                <ul>
+                    <li>222222222</li>
+                    <li>222222222</li>
+                    <li>222222222</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div onclick="change()">222222</div>
+    <input type="text" placeholder="">
+    <div id="box">
+        <ul>
+            <li class="box1"></li>
+            <li class="box2"></li>
+            <li class="box3"></li>
+        </ul>
+    </div>
+    <table>
+        <tr>
+            <td rowspan="" colspan=""></td>
+        </tr>
+    </table>-->
+    <!--<div id="box">
+        <div id="d1"></div>
+        <div id="d2"></div>
+        <div id="d3"></div>
+        <div id="d4"></div>
+    </div>-->
+    <!--<ul id="d1">
+        <li><img src="../images/banner01.png" alt=""></li>
+    </ul>-->
+<!--
+    <button id="ddd" value="111" class="ddd aaa">222</button>
+--> <form>
+        <input type="submit" value="delete1" onclick="cc1()" />
+        <input type="submit" value="delete2" onclick="cc2()" />
+    </form>
+    <script>
+           
+        function cc1(){
+            var res = confirm('真的要删除吗？')
+            if(res){
+                return res;
+            }
+                console.log(res)
+        }
+        function cc2(){
+            var res = confirm('真的要删除吗？')
+            console.log(res)
+        }
+                
+        /*var out = 25;
+        inner = {
+            out : 20,
+            func:function(){
+                var out = 30;
+                return this.out;
+            }
+        }
+        console.log(inner.func,"----------------------",inner.func());       //  function()  对象 undefined
+        console.log("----------------------------");
+        console.log(inner.func());                  // 30   ------------20
+        console.log("----------------------------");
+        console.log((inner.func)());                  // 30
+        console.log("----------------------------");
+        console.log((inner.func = inner.func)());   //???
+        function test(xxx){
+            alert(xxx);
+            var xxx = 123;
+            function xxx(){
+                alert(xxx)
+            }
+        }
+        test(444);
+         function foo(){
+            var i = 0;
+            return function(){
+                console.log(i++);
+            }
+        }
+               1-0  1-1 
+        arr[[],[201,202],[301,302]];
+        var f1 = foo();
+        var f2 = foo();
+        f1();
+        f1();
+        f2();
+        foo()();
+        foo()();
+       function fn(){return 20;}
+        fn.toString = function(){return 30}
+        console.log(fn);
+        console.log(fn+10);
+        console.log(fn());
+         var f = true;
+        if(f)
+            var a = 10;
+        function fn(){
+            var b = 20;
+            c = 30;
+        }
+        fn();
+        console.log(a);
+        console.log(b);
+        console.log(c);
+            var a ;
+            a();
+            
+        function fn(a){
+            console.log(a);
+            function a(){}
+            var a = 2;
+            console.log(a);
+        }
+        fn(1);
+     /*
+            var a = 0;
+        for(var i = 0,a = 0;i<3;i++){
+             a = a++;
+            console.log(a);
+        }
+   function change(){
+            alert(11);
+        }
+        function fun(n,j){
+            console.log(j);
+            return {
+                fun : function(m){
+                    return fun(m,n);
+                }
+            }
+        }
+        var a=fun(0);a.fun(1);a.fun(2);a.fun(3);
+        var b=fun(0).fun(1).fun(2).fun(3);
+        var c=fun(0).fun(1);c.fun(2);c.fun(3);
+        window.onscroll=function(){
+            var scrollTop=
+                document.documentElement.scrollTop;
+            if(scrollTop>=130)
+                $("#d2").addClass("fixed")
+            else
+                $("#d2").removeClass("fixed")
+        }
+        var myDiv = document.getElementById("d1");
+        var computedStyle = document.defaultView.getComputedStyle(myDiv, null);
+*/
+/*
+        alert(document.getElementById("ddd").className())
+*/
+
+    </script>
+</body>
+</html>

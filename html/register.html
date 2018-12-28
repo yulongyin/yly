@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <script src="../js/common.js"></script>
+</head>
+<body>
+<div id="bgFixed">
+    <div>
+        <div>
+            <table>
+                <thead>
+                <tr>
+                    <th colspan="3">会员注册</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td align="right" width="90"><span>*</span>用户名：</td>
+                    <td width="190"><input type="text" id="uname" placeholder="请输入用户名" onblur="searchUser()"></td>
+                    <td>请输入2~16位用户名</td>
+                </tr>
+                <tr>
+                    <td align="right"><span>*</span>密码：</td>
+                    <td><input type="password" id="upwd" placeholder="请输入密码"  onblur="upwdBlur()"></td>
+                    <td>请输入6~16位密码</td>
+                </tr>
+                <tr>
+                    <td align="right"><span>*</span>确认密码：</td>
+                    <td><input type="password" id="cpwd" placeholder="请再次输入密码"  onblur="cpwdBlur()"></td>
+                    <td>请输入确认密码</td>
+                </tr>
+                <tr>
+                    <td align="right">手机号：</td>
+                    <td><input type="text" id="phone" placeholder="请输入手机号" onblur="searchPhone()"></td>
+                    <td>请输入手机号</td>
+                </tr>
+                <tr>
+                    <td align="right">邮箱：</td>
+                    <td><input type="text" id="email" placeholder="请输入邮箱" onblur="searchEmail()"></td>
+                    <td>请输入邮箱</td>
+                </tr>
+                <tr>
+                    <td align="right">真实姓名：</td>
+                    <td><input type="text" id="userName" placeholder="请输入真实姓名"></td>
+                    <td>请输入真实姓名</td>
+                </tr>
+                <tr>
+                    <td align="right">性别：</td>
+                    <td colspan="2" id="sex">
+                        <input type="radio" name="sex" id="man">&nbsp;<label for="man">男</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="sex" id="woman">&nbsp;<label for="woman">女</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="sex" id="secrecy" checked>&nbsp;<label for="secrecy">保密</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" id="remark">备注信息：</td>
+                    <td colspan="2"><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center">
+                        <input type="button" value="注册" onclick="getUname()">
+                        <input type="reset" value="取消">
+                    </td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="3" align="right"><a href="login.html" target="_self">已有账号？去登录&gt;&gt;</a></td>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/register.js"></script>
+
+</body>
+</html>
