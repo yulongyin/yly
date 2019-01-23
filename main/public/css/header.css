@@ -1,0 +1,40 @@
+/*顶部内容*/
+#index{width:100%;background:#eee;}
+header{width: 100%;background:rgba(0,0,0,0.3);height: 150px;}
+header #top_info{width:92%;margin:0 auto;height: 150px;display: flex;justify-content: space-between;}
+header #logo img{margin-top: 25px;height:100px;}
+header #search{height:40px;}
+header #search ul{display: flex}
+header #search ul li{width:300px;margin-top: 55px;}
+header #search input{width:80%;height:36px;padding-left: 4px;border-radius: 6px 0 0 6px;}
+header #search img{height: 22px;background:rgba(0,0,0,0.2);vertical-align: middle;padding: 8px 10px;border-radius: 0 6px 6px 0;}
+header #login{margin-top:60px;width:200px;}
+header #login a{padding:10px 30px;border: 0;background:#333;color: #fff;border-radius: 6px;}
+header #login a:hover{background:#666;}
+
+
+
+
+/*导航条*/
+#nav{width: 92%;margin:0 auto;}
+#nav ul li{float:left;text-align:center;line-height: 60px;font-size: 24px;font-weight:400;width: 20%;}
+#nav ul li a{width:100%;display: block;color:#333;}
+#nav ul li:first-child{background:#666;}
+#nav ul li:first-child a{ color:#fff;}
+#nav ul li:hover{background:#666;}
+#nav ul li:hover a{ color:#fff;}
+
+
+
+@media (max-width:920px){
+    nav ul li{font-size: 20px;width: 25%;}
+}
+
+
+
+@media (max-width:700px){
+    #login{display: none;}
+    #logo{margin:0 auto;}
+    #search{display: none;}
+}
+

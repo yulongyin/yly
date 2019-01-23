@@ -1,0 +1,8 @@
+*{margin:0;padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+.left{float: left;}
+.right{float: right;}
+.clearfix{clear: both;height: 0;content: "";border: 0;}
+.visi_hidden{visibility: hidden !important;}
+.d-none{display: none !important;}

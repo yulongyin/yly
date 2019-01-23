@@ -1,0 +1,63 @@
+/*轮播*/
+#carousel{width:100%;}
+#carousel > div{width:92%;margin:0 4%;}
+#carousel > div ul li a img{width:100%;height:auto;display: block;}
+
+/*分类导航*/
+#content{width:92%;margin:20px auto;}
+#content #con_nav{width:20%;float:left;}
+#content #con_nav li{width:100%;text-align: center;line-height: 60px;background:#ccc;border-bottom: 1px solid #eee;}
+#content #con_nav li:first-child{line-height: 80px;font-weight: bold;font-size: 28px;border-radius: 8px 8px 0 0;}
+#content #con_nav li:last-child{border-radius:0 0 8px 8px ;}
+#content #con_nav li:not(:first-child):hover{cursor: pointer;background:#aaa;}
+#content #con_nav li:nth-child(2){background:#aaa;cursor: pointer;}
+
+/*内容区域*/
+#content #con_main{width:75%;margin-left: 5%;float:left;}
+#content #con_main h2{width:100%;text-align:center;margin-bottom:20px;}
+#content #con_main .con_show{width:100%;background:#ddd;}
+#content #con_main .con_show ul{float:left;width:calc(100% / 3 - 10px);margin-bottom: 30px;}
+#content #con_main .con_show ul{margin-left:10px;max-height:200px;}
+#content #con_main .con_show ul li{width:100%;text-align: center;line-height: 30px;}
+#content #con_main .con_show ul li:first-child{height:170px;}
+#content #con_main .con_show ul li img{max-width:100%;max-height: 170px;transition: all 0.5s linear;}
+#content #con_main .con_show ul li img:hover{transform: scale(2);cursor: pointer;}
+
+/*分页*/
+#change_page{clear: both;float:right;margin:40px 0;}
+#change_page ul li{float:left; margin-left:5px;}
+#change_page ul li input[type=button]{color: #fff;background: #00CCDC;padding:6px 12px;border-radius: 4px;border:0;}
+#change_page ul li input[type=button]:hover{background: #02a3dc;cursor: pointer;}
+#change_page ul .not_btn{background: #aaa;}
+#change_page ul .not_btn:hover{background: #aaa;cursor: default;}
+#change_page ul .page_checked{background: #0D71DC;cursor: default;}
+#change_page ul .page_checked:hover{background: #0D71DC;cursor: default;}
+
+#change_page ul li input.bg_change{background: #02a3dc;}
+#change_page ul li input.not_change{background: rgba(0, 0, 0, 0.3);}
+
+
+
+/*回到顶部*/
+#returnTop{position: fixed;bottom:40px;right:30px;width:60px;height:50px;background:url("../img/return_top01.png") no-repeat;background-size: 100% auto;z-index: 9999;display: none;}
+#returnTop:hover{background:url("../img/return_top02.png") no-repeat;background-size: 100% auto;cursor: pointer;}
+
+
+
+
+@media (max-width:940px){
+    #content #con_main .con_show ul{width:calc(50% - 10px);}
+}
+
+
+@media (max-width:639px){
+    
+}
+
+
+
+
+
+
+
+

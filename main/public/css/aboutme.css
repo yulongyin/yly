@@ -1,0 +1,31 @@
+#content{width:92%;background:rgba(0,0,0,0.1);margin: 20px auto;}
+#content::after{content: "";clear: both;border: 0;height:0;}
+#content p{width: 100%;text-align: center;font-weight: bold;}
+#content p:first-child{margin-top:40px;font-size: 28px;}
+#content p:nth-child(2){margin-bottom:40px;line-height: 50px;font-size: 22px;}
+#content .left_con{width:45%;}
+#content .left_con .map{width:80%;height:350px;background:url("../img/map.jpg") no-repeat;margin:20px 10%;background-size: 100% auto;}
+#content .left_con div:nth-child(2){width:80%;margin:20px 10%;line-height: 36px;}
+
+
+#content .right_con{width:45%;}
+#content .right_con input[type=text]{width:80%;height:40px;margin-top: 20px;border-radius: 6px;border: 1px solid rgba(0,0,0,0.5);padding-left: 10px;box-sizing: border-box;}
+#content .right_con textarea{width:80%;height:200px;margin-top: 20px;border-radius: 6px;border: 1px solid rgba(0,0,0,0.5);padding-left: 10px;box-sizing: border-box;padding-top: 10px;line-height: 30px;resize: none;overflow: hidden;}
+
+#content .right_con input[type=button]{width:100px;height:40px;float:right;margin-right: 20%;margin-top: 20px;border-radius: 6px;border: 1px solid rgba(0,0,0,0.5);font-size: 18px;transition: all 0.5s linear;background:rgba(142,145,153, 0.5)}
+#content .right_con input[type=button]:hover{background:rgba(13,21,43, 0.8);color:#fff;cursor: pointer;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

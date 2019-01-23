@@ -1,0 +1,48 @@
+.bg-ccc{background: #ccc;}
+.bg-bbb{background: #bbb;}
+.bd-aaa-1{border:1px solid #aaa;}
+.max-width{max-width: 92%;margin:0 auto;}
+.margin-top{margin-top: 20px;}
+a{color: #000;}
+.yly-effect{width:100%;}
+.yly-effect .yly-block{width:48%;height:500px;overflow: hidden;}
+.yly-effect .yly-block h2{text-align: center;margin: 10px auto;}
+.zIndex{z-index: 10;}
+/*开关门效果*/
+.yly-effect .yly-block .yly-pt-rel{position: relative;}
+.yly-effect .yly-block .yly-pt-rel .yly-move{float: left;width:150px;position: relative;height:200px;margin-left: 10px;margin-top: 20px;background: url("../img/effect01.png") no-repeat;background-size: 100% 100%;}
+.yly-effect .yly-block .yly-pt-rel .yly-move ul li{width:150px;height:200px;color: #fff;text-align: center;line-height: 200px;overflow: hidden;}
+.yly-effect .yly-block .yly-pt-rel .yly-move ul li:first-child{transform:rotateY(0);transform-origin: 0%;transition: all 0.5s linear;opacity: 1;position: absolute;left: 0;right: 0;}
+.yly-effect .yly-block .yly-pt-rel .yly-move ul li:last-child{transform:rotateY(90deg);transform-origin: 100%;opacity: 1;position: absolute;left: 0;top:0;z-index: 10;background: #f0f;transition: all 0.5s linear;}
+.yly-effect .yly-block .yly-pt-rel .yly-move:hover{cursor: pointer;}
+.yly-effect .yly-block .yly-pt-rel .yly-move:hover ul li:first-child{transform:rotateY(90deg);transform-origin: 0%;opacity: 0;}
+.yly-effect .yly-block .yly-pt-rel .yly-move:hover ul li:last-child {transform:rotateY(0deg);transform-origin:100%;opacity: 0.5;}
+
+/*左侧选项卡*/
+.yly-effect .yly-block .yly-left-items{width:80%;margin:20px auto;position: relative;height:183px;}
+.yly-effect .yly-block .yly-left-items ul:first-child{width:30%;text-align: center;float: left;}
+.yly-effect .yly-block .yly-left-items ul:first-child li{line-height: 60px;background: #aaa;border-bottom: 1px solid #fff;}
+.yly-effect .yly-block .yly-left-items ul:first-child li:hover{cursor: pointer;}
+.yly-effect .yly-block .yly-left-items ul:first-child li:first-child{background: #bbb;}
+.yly-effect .yly-block .yly-left-items ul:last-child{width: 70%;overflow: hidden;float: left;height:183px;}
+.yly-effect .yly-block .yly-left-items ul:last-child li{height:304px;width:70%;background:#bbb;box-sizing: border-box;padding:20px 20px;position: absolute;}
+
+/*放大镜效果*/
+.yly-effect .magnifier{width:95%;margin:20px auto;position: relative;height:183px;}
+.yly-effect .magnifier>div{float: left;position: relative;}
+.yly-effect .magnifier>div:first-child{width:40%;position: relative;}
+.yly-effect .magnifier>div .left-all-img ul{width:100%;margin-bottom: 5px;}
+.yly-effect .magnifier>div .left-all-img ul img{width:100%;height: auto;}
+
+
+
+
+
+
+
+
+
+
+
+
+

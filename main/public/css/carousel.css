@@ -1,0 +1,17 @@
+
+#carousel{width:100%;}
+#carousel > div{width:92%;margin:0 4%;}
+#carousel > div ul li a img{width:100%;height:auto;display: block;}
+#carousel > div ul li:not(:first-child){display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
